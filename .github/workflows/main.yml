@@ -16,7 +16,7 @@ jobs:
 
       - run: pip install requests
 
-      - run: python bot.py
+      - run: python -u bot.py 
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }
