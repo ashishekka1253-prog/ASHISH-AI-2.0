@@ -59,7 +59,7 @@ def main():
             )
 
             updates = response.json().get("result", [])
-
+print("Telegram:", response.status_code, response.text, flush=True)
             for update in updates:
                 offset = update["update_id"] + 1
 
